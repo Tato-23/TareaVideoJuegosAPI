@@ -1,0 +1,35 @@
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsIm5vbWJyZV91c3VhcmlvIjoianNhbnRvcyIsImNvcnJlbyI6Imphdmllci5zYW50b3NAZ21haWwuY29tIiwiaWF0IjoxNzgxOTI5MTU2LCJleHAiOjE3ODE5MzAwNTZ9.kEbFLfrDRrEmp-hfkrSsY2YPwX9zSkUEFCLrGk7ADw4
+###
+GET http://localhost:3000/api/studios/ HTTP/1.1
+
+###
+GET http://localhost:3000/api/studios/5 HTTP/1.1
+
+###
+GET http://localhost:3000/api/studios/6/games HTTP/1.1
+
+###
+POST http://localhost:3000/api/studios/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "nombre": "Nintendo",
+    "pais": "Japón",
+    "descripcion": "Empresa japonesa desarrolladora de videojuegos fundada en 1889."
+}
+
+###
+PUT http://localhost:3000/api/studios/5 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "nombre": "Nintendo Co., Ltd.",
+    "pais": "Japón",
+    "descripcion": "Empresa japonesa líder en el desarrollo de videojuegos y consolas."
+}
+
+###
+DELETE http://localhost:3000/api/studios/6 HTTP/1.1
+Authorization: Bearer {{token}}

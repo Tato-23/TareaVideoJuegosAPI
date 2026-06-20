@@ -1,0 +1,35 @@
+@refreshToken= ff88ff421ba133d28019c56a0d664e98941a251c4cf95f510abe0403720728692d50c3dca7ae8764
+###
+POST http://localhost:3000/api/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "correo": "javier.santos@gmail.com",
+    "contrasena": "Test2026",
+    "nombre_usuario": "jsantos"
+}
+
+###
+POST http://localhost:3000/api/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "correo": "javier.santos@gmail.com",
+    "contrasena": "Test2026"
+}
+
+###
+POST http://localhost:3000/api/auth/refresh HTTP/1.1
+Content-Type: application/json
+
+{
+    "refreshToken": "{{refreshToken}}"
+}
+
+###
+POST http://localhost:3000/api/auth/logout HTTP/1.1
+Content-Type: application/json
+
+{
+    "refreshToken": "{{refreshToken}}"
+}
