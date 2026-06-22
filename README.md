@@ -12,7 +12,7 @@ Con las dependencias instaladas y el archivo `.env` configurado, la aplicación 
 
 ## Estructura del proyecto
 
-La organización del proyecto se basó en lo explicado durante las clases, aunque cabe mencionar que el enunciado de la actividad únicamente solicitaba cuatro carpetas principales dentro del código fuente. Sin embargo, se decidió ampliar un poco más la estructura para lograr una separación de responsabilidades más clara y ordenada. A continuación se describe el propósito de cada una de las carpetas que conforman el proyecto:
+La organización del proyecto amplía la estructura base para lograr una separación de responsabilidades más clara y ordenada. A continuación se describe el propósito de cada una de las carpetas que conforman el proyecto:
 
 1. **controllers**: contiene la lógica encargada de recibir las peticiones HTTP, llamar a los servicios correspondientes y enviar las respuestas al cliente.
 
@@ -32,7 +32,7 @@ La organización del proyecto se basó en lo explicado durante las clases, aunqu
 
 Adicionalmente, el proyecto cuenta con los archivos `app.js`, donde se configura la aplicación de Express junto con sus middlewares y rutas, y `server.js`, que es el punto de entrada encargado de iniciar el servidor. También se incluye una carpeta `sql` con el script `init.sql` para la creación de las tablas, y una carpeta `test` destinada a las pruebas del proyecto.
 
-## Explicacion de Enpoints 
+## Explicación de Endpoints
 
 ## Endpoints de Autenticación
 
